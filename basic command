@@ -48,3 +48,44 @@ After the clone, the main and origin/main both point to a common commit id.
          
          After getting the changes from the remote main by fetch and rebase now you can see that
          both origin/main and main points to commit 36ce3d368b16dc28519e9c1351772dc62e23169a
+         
+     Scenario 2 Example : 
+     
+     $ git commit -m "synchronization issue added"
+      [main 3d28cb0] synchronization issue added
+      1 file changed, 45 insertions(+), 11 deletions(-)
+
+     $ git log
+      commit 3d28cb040316f5b57b698e715da53dcca0919ddb (HEAD -> main)
+      Author: tuhin <gtuhin05ku@gmail.com>
+      Date:   Sun Mar 19 20:14:40 2023 +0600
+      synchronization issue added
+
+      commit 36ce3d368b16dc28519e9c1351772dc62e23169a (origin/main, origin/HEAD)
+      
+      Here, main points to commit 3d28cb040316f5b57b698e715da53dcca0919ddb but origin/main points to previous  commit 36ce3d368b16dc28519e9c1351772dc62e23169a.
+      Therefore, remote and local are not synced.
+      
+      Now, to sync we have to push our commit to remote .
+      
+      $ git push origin main
+        Enumerating objects: 5, done.
+        Counting objects: 100% (5/5), done.
+        Delta compression using up to 8 threads
+        Compressing objects: 100% (2/2), done.
+        Writing objects: 100% (3/3), 1.26 KiB | 1.26 MiB/s, done.
+        Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+        To github.com:ttuhin/practice.git
+        36ce3d3..3d28cb0  main -> main
+        
+        $ git log
+         commit 3d28cb040316f5b57b698e715da53dcca0919ddb (HEAD -> main, origin/main, origin/HEAD)
+         Author: tuhin <gtuhin05ku@gmail.com>
+         Date:   Sun Mar 19 20:14:40 2023 +0600
+
+         synchronization issue added
+         
+         After successful push to remote branch both main and origin/main points to   commit 3d28cb040316f5b57b698e715da53dcca0919ddb
+
+
+
