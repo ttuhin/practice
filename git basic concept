@@ -52,3 +52,4 @@ After the clone, the main and origin/main both point to a common commit id.
          After getting the changes from the remote main by fetch and rebase now you can see that
          both origin/main and main points to commit 36ce3d368b16dc28519e9c1351772dc62e23169z
   #This line is changed from main branch
+  # This line is also change from main branchs
