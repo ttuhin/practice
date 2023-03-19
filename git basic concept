@@ -1,4 +1,5 @@
 #This file contains basic git concept
+
 commit c340a301256a258f671c14e07d2c933f6c835ccd (HEAD -> main, origin/main)
 After the clone, the main and origin/main both point to a common commit id.
 #Remote: main or master is a default branch and always points to a commit id.
