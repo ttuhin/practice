@@ -56,8 +56,11 @@ After the clone, the main and origin/main both point to a common commit id.
   # This line is also changing from the main branches
   # This line is also changing from the main branches
 <<<<<<< HEAD
+<<<<<<< HEAD
   # This line is also changing from the develop branches
 
+=======
+>>>>>>> main
 =======
 >>>>>>> main
 
