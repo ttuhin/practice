@@ -1,1 +1,16 @@
-#This file contains basic git command
+#This file contains basic git concept
+commit c340a301256a258f671c14e07d2c933f6c835ccd (HEAD -> main, origin/main)
+After clone , main and origin/main both points to a common commit id.
+#Remote : main or master is a default branch and always points to a commit id.
+          Whenever , you clone, it will download the content from the commit id main points currently
+#Local : in local origin/main or origin/master represents the remote branch which has a copy in local
+         and master/main represents the local master/main branch
+         #origin/main points to a commit id which you fetch last time from remote main branch
+         Now, if you perform a commit , main points to that commit which is not pushed yet.
+         Now consider scenario 1 : Someone else pushed his commit toi main(remote repo).
+         In that case, in your local copy origin/main will still points to previous commit id(last time you fetch)
+         So, remote main points to a commit id and your local origin/main points to a commit id is different.
+         scenario 2: You committed a change 
+                     Your main and origin/main will point to a different commit id.
+                     However, as soon as you push the commit to remote repo they will point to a same commit id as now git knows you 
+                     pushed the commit to rempote repo.
