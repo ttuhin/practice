@@ -1,11 +1,11 @@
-#This is commit1
-#This is commit2
+#This is commit 1
+#This line is changed from develop branch
 #This line is also changed from develop branch
 
 commit c340a301256a258f671c14e07d2c933f6c835ccd (HEAD -> main, origin/main)
 After the clone, the main and origin/main both point to a common commit id.
 #Remote: main or master is a default branch and always points to a commit id.
-          Whenever you clone, it will download the content from the commit id main points currently
+          Whenever, you clone, it will download the content from the commit id main points currently
 #Local: in local origin/main or origin/master represents the remote branch which has a copy in local
          and master/main represents the local master/main branch
          #origin/main points to a commit id which you fetch last time from the remote main branch
@@ -54,7 +54,7 @@ After the clone, the main and origin/main both point to a common commit id.
   #This line is changed from the main branch
   # This line is also changing from the main branch
   # This line is also changing from the main branches
-  # This line is also changing from the develop branch
+  # This line is also changing from the main branches
 
   #This line is changed from main branch
   # This line is also change from main branchs
